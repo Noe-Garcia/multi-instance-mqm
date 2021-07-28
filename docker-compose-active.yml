@@ -1,0 +1,18 @@
+version: "2.2"
+services:
+  mqmactive:
+    image: mqm
+    #restart: always
+    volumes:
+      - ./mqm:/mnt/mqm
+    environment:
+      - LICENSE=accept 
+      - MQ_QMGR_NAME=PMXSPEI01
+    ports:
+      - 1414:1414
+      - 9443:9443
+    networks:
+    - mq
+networks:
+  mq:
+    driver: bridge
