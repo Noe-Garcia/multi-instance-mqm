@@ -24,7 +24,7 @@ docker-compose -f docker-compose-active.yml up -d
 ``` 
 5. Levantar el docker-compose de la segunda instancia
 ``` console
-docker-compose -f docker-compose-stanby.yml up -d
+docker-compose -f docker-compose-standby.yml up -d
 ``` 
 6. Comprobar contenedores corriendo
 ``` console
